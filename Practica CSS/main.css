@@ -4,193 +4,1086 @@
     box-sizing: border-box;
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
 @media screen and (max-width: 600px) {
-  
+
+    /* Container Principal*/
     #container {
-        background-color: aqua;
-
-
+        height: auto;
+        width: 100%;
+        font-family: 'Outfit', sans-serif;
+        background-color: rgb(252, 248, 248);
         display: grid;
-        grid-template-rows: 50px auto auto;
-
-
-
+        grid-template-rows: 50px 800px 400px auto 750px 850px;
     }
 
-    header {
-        background-color: burlywood;
-        grid-row: 1 / 2;
-    }
+     /* -------------- HEADER ---------------------- */
 
-    #destacat1 {
-        background-color: rgb(13, 187, 187);
-        grid-row: 2 / 3;
-    }
-
-    #destacat2 {
-        background-color: cornflowerblue;
-        grid-row: 3 / 4;
-    }
-
-
-}
-
-
-@media screen and (min-width: 600px) {
-
-
-    #container {
-
-
-        display: grid;
-        grid-template-rows: 40px 400px 300px auto auto 350px 200px;
-        grid-template-columns: auto;
     
-    }
-
-    header {
-        background-color: burlywood;
+    #header {
+        background-color: white;
+        position: sticky;
+        top: 0;
         grid-row: 1 / 2;
         display: flex;
-        justify-content: space-between;
+        overflow: hidden;
+        z-index: 10;   
     }
 
-    .itemmenu {
-        width: 33%;
-        background-color: gainsboro;
+    #header div {
+        width: 50%;
+        height: 100%;
     }
 
-    /* ----------------------------------------------- */
+    .header-centre {
+        display: none;
+    }
+
+    .header-esquerra *{
+        height: 45px;
+        width: 40px;
+        margin-left: 10px;
+        margin-right: 10px;
+        margin-top: 2px;
+    }
+
+    .header-esquerra *:hover{
+        border: 2px solid gray;
+        border-radius: 10px;
+        padding: 5px;
+    }
+
+    .header-dreta *:hover{
+        border: 2px solid gray;
+        border-radius: 10px;
+        padding: 5px;
+    }
+
+    .header-esquerra img {
+        height: 30px;
+        width: 60px;
+        margin-bottom: 34px;
+    }
+
+    .header-dreta * {
+        float: right;
+        height: 45px;
+        width: 30px;
+        margin-left: 20px;
+        margin-right: 10px;
+        margin-top: 3px;
+    }
+
+
+    /* --------------- DESTACAT 1---------------------- */
 
     #destacat1 {
-        background-color: rgb(13, 187, 187);
+        background-image: url("img/destaca1.jpg");
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
         grid-row: 2 / 3;
         display: flex;
-        flex-wrap: wrap;
-        align-items: stretch;
-        margin-right: 10px;
-        margin-left: 10px;
-        
-        
-    }
-
-    .dest1esq {
-        width: 50%;
-        background-color: darkolivegreen;
-        display: flex;
-        justify-content: flex-start;
         align-items: center;
+        justify-content: center;
     }
 
     .newarr {
-        background-color: fuchsia;
-        width: 150px;
-        height: 150px;
-        margin-left: 50px;
+        height: auto;
+        width: 85%;
+        color: whitesmoke;
+        padding:10px;
+        margin-bottom: 28px;
+        overflow: scroll;
+    }
+
+    .find {
+        display: none;
+    }
+
+    /* Components Sub-Div New Arrivals (newarr)*/
+
+    #titol-newarr {
+        font-size: 30px;
+        letter-spacing: 1px;
+        font-weight: 800;
+    }
+
+    #subtitol-newarr {
+        font-size: 20px;
+        font-weight: 800;
+    }
+
+    #paragraf-newarr {
+        margin-left: 56px;
+        font-size: 13px;
+        font-weight: 400;
+        opacity: 0.7;
+    }
+
+    /* BOTO NEW ARRIVALS */
+    #btn-shopnow {
+        color: black;
+        margin-top: 21px;
+        width: 44%;
+        height: 45px;
+        margin-bottom: 13px;
+        background-color: whitesmoke;
+        border-radius: 4px;
+        font-weight: 900;
+        border: 2px solid whitesmoke;
+    }
+
+    /* ------------ DESTACAT 2 --------------------- */
+
+    #destacat2 {
+        background-image: url("img/destaca2.jpg");
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        grid-row: 3 / 4;
+        display: flex;
+        justify-content: flex-start;
+        padding: 20px;
+    }
+
+    .standup {
+        height: auto;
+        width: 80%;
+        padding: 10px;
+        margin-left: 22px;
+        overflow: scroll;
+    }
+
+    /* Componenets Div-Stand Up */
+
+    .titol-standup {
+        letter-spacing: 2px;
+        font-size: 30px;
+        font-weight: 900;
+    }
+
+    .subtitol-standup {
+        font-size: 20px;
+        letter-spacing: 2px;
+        font-weight: 800;
+    }
+
+    .p-standup {
+        font-size: 14px;
+        opacity: 0.8;
+        font-weight: 600;
+    }
+
+    /* BOTO STANDUP */
+    #shopnow {
+        color: white;
+        width: 46%;
+        height: 12%;
+        background-color: rgb(20, 17, 17, 0.9);
+        border-radius: 4px;
+        font-weight: 800;
+        border: 2px solid rgb(20, 17, 17, 0.9);
+    }
+
+    /* --------------- TENDA --------------------- */
+
+    #tenda {
+        grid-row: 4 / 5;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+        padding: 15px;
+        background-color: white;
+    }
+
+    /* Components Titol Tenda */
+
+    #newpro {
+        width: 100%;
+        height: 75px;
+        display: flex;
+        align-items: center;
+        flex-wrap: nowrap;
+    }
+
+    #div-titol-tenda {
+        width: 70%;
+        text-align: center;
+    }
+
+    #div-viewall{
+        width: 15%;
+        text-align: right;
+    }
+
+    #text-viewall {
+        margin-top: 5px;
+        text-decoration: underline;
+        font-size: 14px;
+        font-weight: 600;
+    }
+
+    .titol-tenda {
+        font-weight: 900;
+        font-size: 1.5em;
+    }
+
+    /* Components Div Producte */
+
+    .div-producte {
+        width: 48%;
+        height: 430px;
+        margin-bottom: 10px;
+        display: flex;
+        flex-wrap: wrap;
+        background-color: rgb(250, 237, 218);
 
     }
 
     /* */
 
-    .dest1dre {
-        width: 50%;
-        background-color: darksalmon;
+    #div-foto-producte{
+        height: 65%;
+        width: 100%;
+        background-color: whitesmoke;
+        position: relative;
+        margin-bottom: 15px;
+        border-radius: 4px;
+    }
+
+    /* */
+    #item-producte {
+        float: right;
+        text-align: center;
+        width: 20%;
+        padding: 8px;
+        margin-top: 20px;
+        margin-right: 20px;
+        background-color: maroon;
+        color: whitesmoke;
+    }
+
+    #boton-añadir-carrito {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        height: 48px;
+        font-weight: 700;
+        font-size: 20px;
+        border-radius: 4px;
+    }
+
+    #div-dades-producte {
+        height: 8%;
+        width: 100%;
+     
+    }
+
+    #div-dades-producte *:hover {
+        border: 2px solid black;
+    }
+
+    /*  */
+
+    #marca-producte { 
+        color: grey;
+        font-weight: 500;
+        margin-top: 8px;
+    }
+
+    #nom-producte {
+        font-size: 15px;
+        margin-top: 8px;
+        font-weight: 800;
+    }
+
+    #preu-producte {
+        margin-top: 8px;
+    }
+
+    #color-producte {
+        margin-top: 8px;
+    }
+
+    /* -------------- OPINIO -------------------- */
+
+    #opinio {
+        grid-row: 5 / 6;
+        display: flex;
+        flex-wrap: wrap;
+        background-color: white;
+    }
+
+    .titol-opinio {
+        width: 100%;
+        height: 15%;
+        text-align: center;
+    }
+
+    .titol-introduccio {
+        font-weight: 900;
+        font-size: 25px;
+        opacity: 0.8;
+    }
+
+    .subtitol-introduccio {
+        font-weight: bold;
+        opacity: 0.8;
+    }
+
+    .customer {
+        background-image: url("img/cust.PNG");
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        height: 75%;
+        width: 100%;
+    }
+
+    .nav-pointer {
+        width: 100%;
+        height: 10%;
+        text-align: center;
+    }
+
+    #nav {
+        margin-top: 25px;
+
+    }
+
+    #nav svg {
+        margin-right: 5px;
+        margin-left: 5px;
+    }
+
+    #nav svg:hover {
+        background-color: black;
+        border-radius: 100%;
+    }
+
+    /* ------------- FOOTER --------------------- */
+
+    #footer {
+        display: flex;
+        flex-wrap: wrap;
+        background-color: rgb(20, 17, 17, 0.9);
+    }
+
+    #footer div {
+        padding: 10px;
+        letter-spacing: 2px;
+    }
+
+    #footer svg { 
+
+        float: right;
+        border-radius: 3px;
+        margin-top: 4px;
+        background-color: rgba(36, 31, 31, 0.9);
+
     }
 
 
 
-    /* ---------------------------------------------- */
+    /* DIV FOOTER DADES-ICONO*/
 
-    #destacat2 {
-        background-color: cornflowerblue;
-        grid-row: 3 / 4;
-        display: flex;
+    .footmenu-dades {
+        color: white;
+        width: 100%;
+        height: 40%;
+        padding-top: 80px;
+        overflow: scroll;
+    }
+
+    .dades {
+        font-size: 19px;
+        font-weight: 300;
+        opacity: 0.7;
+    }
+
+
+
+    /* DIVS FOOTER MENU */
+
+    .shopby {
+        width: 100%;
+        height: 10%;
+     
+  
+    }
+
+    .information {
+        width: 100%;
+        height: 10%;
+        
+
+    }
+
+    .customerservice {
+        width: 100%;
+        height: 10%;
+        
+      
+    }
+
+    .item-footer {
+ 
+        color: white;
+        margin: 7px;
+        font-size: 22px;
+        font-weight: 700;
+        opacity: 0.9;
+        border-bottom: 1px solid white;
         
     }
 
-    .dest2 {
+    .item-footer a {
+        display: none;
+    }
+
+    /* DIV FOOTER */
+
+    .newsletter {
         width: 100%;
-        background-color: darkslategrey;
+        height: 30%;
+        color: white;
+        overflow: scroll;
+    }
+
+    .titol-newsletter {
+        margin: 5px;
+        font-size: 22px;
+        font-weight: 700;
+        opacity: 0.9;
+    }
+
+    .subtitol-footer {
+        margin: 5px;
+        font-size: 15px;
+        font-weight: 700;
+        opacity: 0.7;
+    }
+
+    #relleno {
+        display: none;
+    }
+
+    /* INPUTS FOOTER*/
+    #emailinput {
+        color: rgb(20, 17, 17, 0.9);;
+        width: 71%;
+        height: 55px;
+        border-radius: 6px;
+        padding-right: 10px;
+    }
+
+    #btnfooter {
+        color: rgb(20, 17, 17, 0.9);
+        width: 25%;
+        height: 55px;
+        border-radius: 6px;
+        background-color: rgb(209, 191, 24);
         margin: 10px;
+        font-weight: 900;
+    }
+
+
+}/* FI MEDIA-MOBILE */
+
+/* ******************************************************************************************************************** */
+@media screen and (min-width: 600px) {
+
+
+    #container {
+        display: grid;
+        grid-template-rows: 40px 550px 450px auto auto 300px ;
+        grid-template-columns: 100%;
+    
+    }
+
+        /* -------------- HEADER ---------------------- */
+
+    
+        #header {
+            background-color: white;
+            position: sticky;
+            top: 0;
+            grid-row: 1 / 2;
+            display: flex;
+            overflow: hidden;
+            z-index: 10;   
+        }
+    
+        #header .header-esquerra  {
+            width: 10%;
+            height: 100%;
+        }
+
+        #header .header-dreta  {
+            width: 20%;
+            height: 100%;
+        }
+
+        #header .header-centre  {
+            width: 70%;
+            height: 100%;
+        }
+    
+        .header-esquerra *{
+            height: 45px;
+            width: 40px;
+            margin-left: 10px;
+            margin-right: 10px;
+            margin-top: 2px;
+        }
+
+        .header-esquerra svg{
+            display: none;
+        }
+    
+        .header-esquerra *:hover{
+            border: 2px solid gray;
+            border-radius: 10px;
+            padding: 5px;
+        }
+
+        .header-esquerra img {
+            height: 30px;
+            width: 60px;
+            margin-bottom: 34px;
+        }
+
+        .header-centre {
+            padding-top: 10px;
+            text-align: center;
+            overflow: hidden;
+        }
+
+        .header-centre a {
+            color: black;
+            text-decoration: none;
+            margin-right: 9px;
+            margin-left: 9px;
+        }
+
+        .header-dreta svg {
+            float: right;
+            height: 30px;
+            width: 26px;
+            margin-right: 20px;
+            margin-top: 5px;
+        }
+    
+        .header-dreta svg:hover{
+            border: 2px solid gray;
+            border-radius: 10px;
+            padding: 5px;
+        }
+    
+
+    /* -------------- DESTACAT 1 DESKTOP-------------------- */
+
+        /* --------------- DESTACAT 1---------------------- */
+
+        #destacat1 {
+            background-image: url("img/destacatDek.PNG");
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+            grid-row: 2 / 3;
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            align-content: center;
+            margin-bottom: 40px;
+            background-color: rgba(187, 114, 114, 0.9);
+        }
+        
+    
+        .newarr {
+            height: auto;
+            width: auto;
+            color: black;
+            padding:10px;
+            margin-bottom: 28px;
+            margin-left: 100px;
+            margin-right: 240px;
+        }
+
+        .find {
+            height: 70%;
+            margin-right: 50px;
+            width: 25%;
+            text-align: center;
+            font-size: 50px;
+            font-weight: 700;
+        }
+    
+        /* Components Sub-Div New Arrivals (newarr)*/
+    
+        #titol-newarr {
+            font-size: 30px;
+            letter-spacing: 5px;
+            font-weight: 800;
+        }
+    
+        #subtitol-newarr {
+            letter-spacing: 5px;
+            font-size: 17px;
+            font-weight: 800;
+        }
+    
+        #paragraf-newarr {
+            letter-spacing: 1px;
+            font-size: 13px;
+            font-weight: 400;
+        }
+    
+        /* BOTO NEW ARRIVALS */
+        #btn-shopnow {
+            color: black;
+            width: 50%;
+            height: 35px;
+            background-color: whitesmoke;
+            border-radius: 4px;
+            font-weight: 900;
+            border: 2px solid black;
+            margin-top: 10px;
+        }
+
+
+
+    /* ------------ DESTACAT 2 --------------------- */
+
+    #destacat2 {
+        background-image: url("img/destaca2D.PNG");
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        grid-row: 3 / 4;
         display: flex;
         justify-content: flex-end;
-        align-items: center;
+        padding: 20px;
+        background-color: rgba(132, 175, 196, 0.9)
     }
 
     .standup {
-        margin-right: 40px;
-        height: 150px;
-        width: 150px;
-        background-color: fuchsia;
-
+        height: auto;
+        width: 25%;
+        padding-top: 70px;
     }
 
-    /* ----------------------------------------------- */
+    /* Componenets Div-Stand Up */
+
+    .titol-standup {
+        letter-spacing: 2px;
+        font-size: 20px;
+        font-weight: 900;
+    }
+
+    .subtitol-standup {
+        font-size: 15px;
+        letter-spacing: 2px;
+        font-weight: 800;
+    }
+
+    .p-standup {
+        font-size: 13px;
+        font-weight: 600;
+    }
+
+    /* BOTO STANDUP */
+    #shopnow {
+        color: white;
+        width: 43%;
+        height: 11%;
+        background-color: rgb(20, 17, 17, 0.9);
+        border-radius: 4px;
+        font-weight: 800;
+        border: 2px solid rgb(20, 17, 17, 0.9);
+    }
+    /* --------------- TENDA --------------------- */
 
     #tenda {
-        background-color: crimson;
         grid-row: 4 / 5;
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
-        padding: 10px;
+        align-items: center;
+        padding: 15px;
+        background-color: white;
+        gap: 9px;
     }
 
-    .newpro {
+    /* Components Titol Tenda */
+
+    #newpro {
         width: 100%;
-        height: 45px;
-        background-color: floralwhite;
+        height: 75px;
+        display: flex;
+        align-items: center;
+        flex-wrap: nowrap;
+    }
+
+    #div-titol-tenda {
+        width: 70%;
         text-align: center;
-        padding-top: 5px;
     }
 
-    .producte {
-        height: 300px;
+    #div-viewall{
+        width: 15%;
+        text-align: right;
+    }
+
+    #text-viewall {
+        margin-top: 5px;
+        text-decoration: underline;
+        font-size: 14px;
+        font-weight: 600;
+    }
+
+    .titol-tenda {
+        font-weight: 900;
+        font-size: 1.5em;
+    }
+
+    /* Components Div Producte */
+
+    .div-producte {
         width: 24%;
-        background-color: deeppink;
-        margin: 2px;
-    }
-
-    /* ------------------------------------------------ */
-
-    #opinio {
-        background-color: darkgoldenrod;
-        grid-row: 5 / 6;
+        height: 500px;
+        margin-bottom: 10px;
         display: flex;
         flex-wrap: wrap;
-        justify-content: space-between;
+        background-color: rgb(250, 237, 218);
+        border-radius: 5px;
+
     }
 
-    .what {
+    /* */
+
+    #div-foto-producte{
+        height: 65%;
         width: 100%;
-        height: 100px;
-        background-color: gainsboro;
+        background-color: whitesmoke;
+        position: relative;
+        margin-bottom: 15px;
+        border-radius: 4px;
     }
 
-    .customer {
-        width: 24%;
-        background-color: gray;
-        height: 300px;
+    /* */
+    #item-producte {
+        float: right;
+        text-align: center;
+        width: 20%;
+        padding: 8px;
+        margin-top: 20px;
+        margin-right: 20px;
+        background-color: maroon;
+        color: whitesmoke;
+    }
+
+    #boton-añadir-carrito {
+        display: none;
+    }
+
+    #div-dades-producte {
+        height: 8%;
+        width: 100%;
+     
+    }
+
+    /*  */
+
+    #marca-producte { 
+        color: grey;
+        font-weight: 500;
+        margin-top: 8px;
+    }
+
+    #nom-producte {
+        font-size: 15px;
+        margin-top: 8px;
+        font-weight: 800;
+    }
+
+    #preu-producte {
+        margin-top: 8px;
+    }
+
+    #color-producte {
+        margin-top: 8px;
     }
 
     /* ------------------------------------------------ */
 
-    footer {
-        background-color: red;
-        grid-row: 6 / 7;
+    /* -------------- OPINIO -------------------- */
+
+    #opinio {
+        grid-row: 5 / 6;
+        min-height: 700px;
         display: flex;
-        padding: 20px;
+        flex-wrap: wrap;
+        background-color: white;
     }
 
-    .menufoot {
-        background-color: greenyellow;
+    /* */
+
+    .titol-opinio {
+        width: 100%;
+        height: 25%;
+        text-align: center;
+    }
+
+    .titol-introduccio {
+        font-weight: 900;
+        font-size: 25px;
+        opacity: 0.8;
+    }
+
+    .subtitol-introduccio {
+        margin-bottom: 30px;
+        font-weight: bold;
+        opacity: 0.8;
+    }
+
+    /* */
+
+    .customer {
+
+        background-image: url("img/custoer.PNG");
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        height: 65%;
+        width: 100%;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 50px;
+    }
+
+    .fletxa-esquerra {
+        width: 5%;
+        height: 10%;
+        padding-left: 1%;
+        
+    }
+
+    .fletxa-esquerra * {
         height: 100%;
+        width: 70%;
     }
 
-    .menufoot1 {
-        background-color: green;
+    .fletxa-dreta {
+        width: 5%;
+        height: 10%;
+        padding-left: 1.5%;
     }
 
+    .fletxa-dreta * {
+        height: 100%;
+        width: 70%;
+    }
+
+    /* */
+
+    .div-customer {
+        width: 16%;
+        height: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+
+       
+    }
+
+    .div-customer div * {
+        text-align: center;
+    }
+
+    .foto-customer {
+        height: 60%;
+        width: 80%;
+        background-image: url("img/customer-foto.PNG");
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        border-radius: 50%;
+    }
+
+    .estrelles-customer {
+        height: 10%;
+        width: 45%;
+        
+    }
+
+    .estrelles-customer svg {
+        height: 100%;
+        width: 16%;
+    }
+
+    .text-customer {
+        font-weight: 600;
+        height: 20%;
+        width:100%;
+    }
+
+    .reds-customer {
+        opacity: 0.8;
+        color: gray;
+        font-weight: 500;
+        font-size: 17px;
+        height: 10%;
+        width:100%;
+
+    }
+
+    /* */
+
+    .nav-pointer {
+        width: 100%;
+        height: 10%;
+        text-align: center;
+    }
+
+    #nav {
+        margin-bottom: 25px;
+
+    }
+
+    #nav svg {
+        margin-right: 5px;
+        margin-left: 5px;
+    }
+
+    #nav svg:hover {
+        background-color: black;
+        border-radius: 100%;
+    }
+
+    /* ------------------------------------------------ */
+
+   /* ------------- FOOTER --------------------- */
+
+   #footer {
+    grid-row: 6 / 7;
+    display: flex;
+    flex-flow: row nowrap;
+    background-color: black;
+}
+
+#footer div {
+    padding: 10px;
+}
+
+
+
+
+
+/* DIV FOOTER DADES-ICONO*/
+
+.footmenu-dades {
+    overflow: scroll;
+    color: white;
+    width: 25%;
+    height: 100%;
+}
+
+.footmenu-dades * {
+    margin-left: 40px;
+}
+
+.dades {
+    font-size: 10px;
+    font-weight: 300;
+    opacity: 0.5;
+}
+
+
+
+/* DIVS FOOTER MENU */
+
+.shopby {
+    width: 12%;
+    height: 100%;
+    color: white;
+}
+
+.information {
+    width: 12%;
+    height: 100%;
+    color: white;
+}
+
+.customerservice {
+    width: 11%;
+    height: 100%;
+    color: white;
+}
+
+.item-footer {
+    font-weight: 700;
+    opacity: 0.9;
+    margin-top: 50px;
+    overflow: hidden;
+}
+
+.item-footer a {
+    font-size: 10px;
+    margin-bottom: 5px;
+    text-decoration: none;
+    color: white;
+    opacity: 0.5;
+}
+
+.item-footer svg{
+    display: none;
+}
+
+/* DIV FOOTER */
+
+.newsletter {
+    padding: 40px;
+    width: 40%;
+    height: 100%;
+    color: white;
+}
+
+.newsletter * {
+    margin-left: 30px;
+}
+
+
+.titol-newsletter {
+    font-size: 15px;
+    font-weight: 700;
+    opacity: 0.9;
+}
+
+.subtitol-footer {
+    font-size: 10px;
+    font-weight: 700;
+    opacity: 0.5;
+}
+
+/* INPUTS FOOTER*/
+#emailinput {
+    color: rgb(20, 17, 17, 0.9);;
+    width: 40%;
+    height: 50px;
+    border-radius: 6px;
+    padding-right: 10px;
+}
+
+#btnfooter {
+    color: rgb(20, 17, 17, 0.9);
+    width: 15%;
+    height: 50px;
+    font-size: 13px;
+    border-radius: 6px;
+    background-color: rgb(209, 191, 24);
+    margin: 10px;
+    font-weight: 900;
+}
     
 
 
@@ -199,80 +1092,3 @@
 
 
 }
-
-
-/* 
-
-@media screen and (min-width: 600px) {
-    
-    body {
-        font-size: 12px;
-        background-color: #485460;
-        font-family: 'Quicksand', sans-serif;
-        max-width: 1000px;
-        margin: auto;
-        display: grid;
-        grid-template-columns: 250px 250px 250px 250px;
-        grid-template-rows: auto auto auto;
-    }
-
-    header {
-        grid-row: 1 / 2;
-        grid-column: 1 / 5;
-    }
-    
-    body > aside {
-        grid-row: 2 / 3;
-        grid-column: 4 / 5;
-        background-color: #05c46b;
-        padding: 30px;
-    }
-    
-    body > main {
-        grid-column: 1 / 4;
-        grid-row: 2 / 3;
-    }
-    
-    body > footer {
-        grid-row: 3 / 4;
-        grid-column: 1 / 3;
-    }
-}
-
-  
-@media screen and (max-width: 600px) {
-    body {
-
-        font-size: 12px;
-        background-color: #485460;
-        font-family: 'Quicksand', sans-serif;
-        max-width: 1000px;
-    
-        margin: auto;
-    
-
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: auto auto auto;
-
-
-    }
-
-    header {
-        grid-row: 1 / 2;
-    }
-    
-    body > aside {
-        display: none;
-    }
-    
-    body > main {
-        grid-row: 2 / 3;
-    }
-    
-    body > footer {
-        grid-row: 3 / 4;
-    }
-}
-
-*/
