@@ -1,0 +1,149 @@
+//Regles Recomenades Css
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+$normal: #333333;
+$warning: #f1c40f;
+$error: #e74c3c;
+$success: #2ecc72;
+
+//Estats
+p {
+
+    text-align: justify;
+    color: $normal;
+    background-color: lighten($color: $normal, $amount: 50%);
+
+    &.warning {
+        color: $warning;
+        background-color: darken($color: $warning, $amount: 25%);
+    
+        
+    }
+    &.error {
+        color: $error;
+        background-color: darken($color: $error, $amount: 25%);
+    }
+    &.success {
+        color: $success;
+        background-color: darken($color:$success, $amount: 25%);
+    }
+}
+
+span {
+
+    color: $normal;
+    background-color: lighten($color: $normal, $amount: 50%);
+
+    &.warning {
+        color: $warning;
+        background-color: darken($color: $warning, $amount: 25%);
+    }
+    &.error {
+        color: $error;
+        background-color: darken($color: $error, $amount: 25%);
+    }
+    &.success {
+        color: $success;
+        background-color: darken($color: $success, $amount: 25%);
+    }
+}
+
+
+//Bucle hX
+@for $i from 1 through 6 {
+
+    h#{$i}{
+
+        font-size: 2.2em -#{$i*0.2}em;
+        color: $normal;
+        background-color: lighten($color: $normal, $amount: 50%);
+
+        &.warning {
+            color: $warning;
+            background-color: darken($color: $warning, $amount: 25%);
+
+        }
+        &.error {
+            color: $error;
+            background-color: darken($color: $error, $amount: 25%);
+        }
+        &.success {
+            color: $success;
+            background-color: darken($color: $success, $amount: 25%);
+        }        
+    }
+}  
+
+//Color Personalitzat
+@for $i from 0 through 10 {
+    
+    @for $j from 0 through 10 {
+    
+        @for $z from 0 through 10 {
+    
+            .color-#{$i*10}-#{$j*10}-#{$z*10}{
+
+                color: rgb(10%*$i,10%*$j,10%*$z);
+            }
+
+            .colorbg-#{$i*10}-#{$j*10}-#{$z*10}{
+
+                background-color: rgb(10%*$i,10%*$j,10%*$z);
+            }
+        }   
+    } 
+}
+
+//Taules
+table {
+
+    width: 100%;
+    border-collapse: collapse;
+
+    th {
+        border: 1px black solid;
+    }
+
+    td {
+        border: 1px black solid;
+    }
+}
+
+//Imatges
+img {
+    width: 300px;
+    border-radius: 45%;
+
+    &.grayscale {
+        filter: grayscale(100%);
+    }
+
+    &.blur {
+        filter: blur(5px);
+    }
+
+    &.sepia {
+        filter: sepia(100%);
+    }
+
+    &.hue-rotate {
+        filter: hue-rotate(150deg)
+    }
+
+    &.invert {
+        filter: invert(80%);
+    }
+
+    &.brightness {
+        filter: brightness(50%);
+    }
+
+    &.contrast {
+        filter: contrast(200%);
+    }
+
+}

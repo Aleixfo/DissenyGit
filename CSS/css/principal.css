@@ -1,0 +1,208 @@
+* {
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+/*
+1. Tots els enllaços no estiguin subrallats i de color verd. A mes,
+ quan hi passem el ratoli per damunt, ha de canviar a color vermell
+ */
+
+ a {
+     color: green;
+     text-decoration: none;
+ }
+
+ a:hover{
+     color: red;
+ }
+
+ /*
+ 2. Sa primera fila i sa tercera fila de ses dues llistes han de 
+ tenir es background gris
+ */
+
+
+ li:nth-of-type(odd){
+    background-color: grey;
+}
+
+
+li:nth-child(1), li:nth-child(3){
+    background-color: grey;
+}
+
+li:nth-of-type(2n+1){
+    background-color: grey;
+}
+
+/*
+3. Quan passem per damunt la fila de la primera llista, i nomes la primera,
+el fons ha de quedar color blau
+*/
+
+header li:hover{
+    background-color: blue;
+}
+
+/*
+4. Primer section: background verd, fons del numero blau
+*/
+
+#s1 {background-color: green;}
+
+#s1>span{
+    background-color: blue;
+}
+
+/*
+5. Segon section, background blau i fons del numero groc
+*/
+
+.s2:nth-child(2) span{
+    background-color:rgba(255, 255, 0, 0.5);
+}
+
+.s2:nth-child(2){
+    background-color: blue;
+}
+
+/*
+6. Tercer section: background groc i fons del numero vermell 
+*/
+
+.s2:nth-child(3){
+    background-color:rgb(255, 255, 0);
+}
+
+.s2:nth-child(3) span{
+    background-color: red;
+}
+
+/*
+7. Els sections del footer de color rosa
+*/
+
+footer section{
+    background-color: pink !important;
+}
+
+/*
+8. Tots els que tenen una classe, el text de color vermell
+*/
+
+[class]{
+    color: red;
+}
+
+/*
+9. Totes les id que contenen el numero 1, el text de color taronja
+*/
+
+[id*="1"]{
+    color: red;
+}
+
+/* -------------------------------------------------------------- */
+
+body {
+   /* background-color: red; */
+   background-image:url("../Imatges/foto.jpg");
+   background-repeat: no-repeat;
+   background-attachment: fixed;
+   background-size: cover;
+   background-position: center center;
+}
+
+#cub div{
+    border: 2px solid red;
+    width: 100px;
+    height: 100px;
+}
+
+#frontal {
+    background-color: royalblue;
+    animation-name: canviColor;
+    animation-duration: 5s;
+    animation-iteration-count: 1;
+}
+#abaix {
+    background-color: saddlebrown;
+    animation-name: canviColor;
+    animation-duration: 5s;
+    animation-iteration-count: 1;
+}
+#darrera {
+    background-color: sandybrown;
+    animation-name: canviColor;
+    animation-duration: 3s;
+    animation-iteration-count: 1;
+}
+#dreta {
+    background-color: silver;
+    animation-name: canviColor;
+    animation-duration: 4s;
+    animation-iteration-count: 1;
+}
+#esquerra {
+    background-color: slategrey;
+    animation-name: canviColor;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+}
+#amunt {
+    background-color: tomato;
+    animation-name: canviColor;
+    animation-duration: 3s;
+    animation-iteration-count: 1;
+    transition-property: background-color width;
+    transition-duration: 3s;
+}
+
+#amunt:hover{
+    background-color: darkmagenta;
+    width: 400px;
+    
+}
+
+/* ANIMACIO */
+/* 1er de tot KeyFrames */
+@keyframes canviColor {
+    0% {
+        background-color: red;
+        width: 30px;
+    }
+    16% {
+        background-color: yellow
+    }
+    37% {
+        background-color: violet;
+        width: 200px;
+    }
+    50% {
+        background-color: blue
+    }
+    75% {
+        background-color: chocolate;
+    }
+    100% {
+        background-color: cyan;
+        width: 30px;
+    }
+}
+
+/* TRANSITION */
+
+
+
+
+
+
+
+
+
+
+
+
+

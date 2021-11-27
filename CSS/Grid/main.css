@@ -1,0 +1,58 @@
+* {
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+
+.container {
+    /* Display: grid -> Obligatori si feim servir grid*/
+    display: grid;
+    /* Definim numero de columnes separades amb espais
+        Si posam fr es una fraccio, dividira la pantalla en tantes fraccions com sindiqui*/
+    grid-template-columns: repeat(4 , 1fr);
+    /* Definim numero de files separades amnb espais*/
+    grid-template-rows: minmax(auto, auto);
+    /* gap -> Espai entre files i columnes (ELS DOS)*/
+    gap: 20px;
+    /* column-gap -> Espai entre columnes*/
+    /* row-gap -> Espai entre files*/
+    justify-items: stretch;/* start center end*/
+    align-items: stretch;/* start centar end*/
+    align-self: stretch;
+    justify-self: stretch;
+
+}
+
+/* .container > div, tots els divs que estiguin dins un div de classe container*/
+.container > div {
+    background-color: khaki;
+    padding: 10px;
+}
+
+.container > div:hover {
+    border: 4px solid blue;
+}
+
+.div-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: 100px;
+    gap: 1em
+}
+
+.div-grid > div {
+    background-color: royalblue;
+}
+
+.div-grid > div:hover{
+    border: 3px solid red;
+}
+
+/* GRID - LINES 
+    LA GRAELLA SE SEPARA EN LINIES, INCLOENT LES DEL PRINCIPI I FINAL (MIN 2)*/
+
+div.div-grid{
+    grid-column: 1/2;/* LINIA START / LINIA END (comensa linia 2 / acaba linia 4*/
+    grid-row: 1/2;
+}

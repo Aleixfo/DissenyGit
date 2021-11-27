@@ -1,0 +1,165 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none !important;
+    color: inherit !important;
+}
+
+
+
+/* ELEMENT CUADRICULA */
+.contenedor {
+
+
+
+
+    /* definir un elemento contenedor como una cuadrícula */
+    display: grid;
+    /* establecer los tamaños de columna y fila  [start] 10% [linia2] 80% [linia3] 10% [end]*/
+    grid-template-columns: 80px auto 80px;
+    grid-template-rows: [start] 10% [headerbodyLine] 80% [bodyfooterLine] 10% [end];
+
+    grid-template-areas: 
+    "capsa capsa capsa"
+    ". cos ."
+    "peu peu peu";
+    
+
+
+
+   
+
+}
+
+
+.capsalera {
+
+    background-color: #F0F8FF;
+
+    position: fixed;
+    right: 0;
+    left: 0;
+    /* colocar sus elementos secundarios en la cuadrícula */
+
+    /*1  grid-column: start / end;
+    grid-row: start / headerbodyLine; */
+
+    /*2 grid-area: start / start / headerbodyLine / end;*/
+
+    /* 3 */ grid-area: capsa;
+
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+
+
+
+}
+
+.cos {
+
+    height: auto;
+    position: static;
+    
+
+
+    /*1 grid-column: linia2 / linia3;
+    grid-row: headerbodyLine / bodyfooterLine; */
+
+    grid-area: cos;
+
+    /* Declares container flex*/
+    display: inline-flex;
+    /* Com que nomes utilitza una dimensio has dindicar si usara files o columnes*/
+    flex-direction: row;
+    /* Defineix si quan no i capiguen els element utilitzin una nova fila, per defecta ve no-wrap*/
+    flex-wrap: wrap;
+    /* La propietat flex-flow combina flex-direction i flex-wrap*/
+
+
+    align-items: baseline;
+    justify-content: space-around;
+    align-content:flex-start;
+
+
+
+    padding: 15px;
+
+    
+
+
+
+}
+
+
+.cos div {
+
+ 
+    width: 355px;
+    height: 330px;
+    margin: 15px;
+    text-align: center;
+    border: 1px solid black;
+    border-radius: 10px;
+
+}
+
+.peu {
+
+    background-color: #F0F8FF;
+
+    position: relative;
+    /*1 grid-column: start / end;
+    grid-row: bodyfooterLine / end; */
+
+    grid-area: peu;
+
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr;
+
+}
+
+.peu > p {
+
+    justify-self: center;
+    align-self: center;
+
+}
+
+.llistaProductes {
+    grid-area: start span 1;
+    justify-self: center;
+    align-self: center;
+    border: 1px dotted black;
+    border-radius: 10px;
+    height: 50px;
+    padding: 7px;
+    text-align: center;
+
+}
+
+.llistaProductes:hover {
+    background-color: #E6E6FA;
+}
+
+.carrito {
+    grid-area: span 1 end;
+    justify-self: center;
+    align-self: center;
+    border: 1px dotted black;
+    border-radius: 10px;
+    height: 50px;
+    padding: 7px;
+    text-align: center;
+
+}
+
+.carrito:hover {
+    background-color: #E6E6FA;
+}

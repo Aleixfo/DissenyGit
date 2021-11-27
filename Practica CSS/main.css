@@ -76,8 +76,7 @@
     }
 
 
-    /* --------------- DESTACAT 1---------------------- */
-
+/* --------------- DESTACAT 1---------------------- */
     #destacat1 {
         background-image: url("img/destaca1.jpg");
         background-repeat: no-repeat;
@@ -87,33 +86,28 @@
         align-items: center;
         justify-content: center;
     }
-
-    .newarr {
+    .div-destacat1 {
         height: auto;
         width: 85%;
         color: whitesmoke;
         padding:10px;
         margin-bottom: 28px;
-        overflow: scroll;
+        overflow: hidden;
     }
-
-    .find {
+    .div-destacat2, .div-destacat3 {
         display: none;
     }
 
-    /* Components Sub-Div New Arrivals (newarr)*/
-
+/* Components Sub-Div New Arrivals (newarr)*/
     #titol-newarr {
         font-size: 30px;
         letter-spacing: 1px;
         font-weight: 800;
     }
-
     #subtitol-newarr {
         font-size: 20px;
         font-weight: 800;
     }
-
     #paragraf-newarr {
         margin-left: 56px;
         font-size: 13px;
@@ -121,7 +115,7 @@
         opacity: 0.7;
     }
 
-    /* BOTO NEW ARRIVALS */
+/* BOTO NEW ARRIVALS */
     #btn-shopnow {
         color: black;
         margin-top: 21px;
@@ -134,8 +128,7 @@
         border: 2px solid whitesmoke;
     }
 
-    /* ------------ DESTACAT 2 --------------------- */
-
+/* ------------ DESTACAT 2 --------------------- */
     #destacat2 {
         background-image: url("img/destaca2.jpg");
         background-repeat: no-repeat;
@@ -145,36 +138,32 @@
         justify-content: flex-start;
         padding: 20px;
     }
-
     .standup {
         height: auto;
         width: 80%;
         padding: 10px;
         margin-left: 22px;
-        overflow: scroll;
+        overflow: hidden;
     }
 
-    /* Componenets Div-Stand Up */
-
+/* Componenets Div-Stand Up */
     .titol-standup {
         letter-spacing: 2px;
         font-size: 30px;
         font-weight: 900;
     }
-
     .subtitol-standup {
         font-size: 20px;
         letter-spacing: 2px;
         font-weight: 800;
     }
-
     .p-standup {
         font-size: 14px;
         opacity: 0.8;
         font-weight: 600;
     }
 
-    /* BOTO STANDUP */
+/* BOTO STANDUP */
     #shopnow {
         color: white;
         width: 46%;
@@ -185,8 +174,7 @@
         border: 2px solid rgb(20, 17, 17, 0.9);
     }
 
-    /* --------------- TENDA --------------------- */
-
+/* --------------- TENDA --------------------- */
     #tenda {
         grid-row: 4 / 5;
         display: flex;
@@ -197,8 +185,7 @@
         background-color: white;
     }
 
-    /* Components Titol Tenda */
-
+/* Components Titol Tenda */
     #newpro {
         width: 100%;
         height: 75px;
@@ -206,108 +193,115 @@
         align-items: center;
         flex-wrap: nowrap;
     }
-
     #div-titol-tenda {
         width: 70%;
         text-align: center;
     }
-
     #div-viewall{
         width: 15%;
         text-align: right;
     }
-
     #text-viewall {
         margin-top: 5px;
         text-decoration: underline;
         font-size: 14px;
         font-weight: 600;
     }
-
     .titol-tenda {
         font-weight: 900;
         font-size: 1.5em;
     }
 
-    /* Components Div Producte */
-
+/* Components Div Producte */
     .div-producte {
         width: 48%;
         height: 430px;
         margin-bottom: 10px;
         display: flex;
-        flex-wrap: wrap;
-        background-color: rgb(250, 237, 218);
-
+        flex-flow: column nowrap;
+        justify-content: space-between;
+        /* background-color: rgb(250, 237, 218); */
     }
 
-    /* */
-
+/*  Div foto producte*/
     #div-foto-producte{
-        height: 65%;
+        height: 64%;
         width: 100%;
         background-color: whitesmoke;
-        position: relative;
-        margin-bottom: 15px;
         border-radius: 4px;
+        display: flex;
+        flex-flow: column nowrap;
+    }
+    .div-producte svg{
+        display: none;
+    }
+    .div-item-producte, .div-boto-producte {
+        height: 20%;
+        width: 100%;
     }
 
-    /* */
+/* Items div foto producte*/
     #item-producte {
         float: right;
         text-align: center;
         width: 20%;
         padding: 8px;
-        margin-top: 20px;
-        margin-right: 20px;
+        margin: 13px;
         background-color: maroon;
         color: whitesmoke;
     }
-
     #boton-añadir-carrito {
-        position: absolute;
-        bottom: 0;
         width: 100%;
-        height: 48px;
+        height: 100%;
         font-weight: 700;
         font-size: 20px;
         border-radius: 4px;
     }
 
-    #div-dades-producte {
-        height: 8%;
+/* Div dades producte */
+    .dades-producte {
+        height: 9%;
         width: 100%;
-     
     }
-
-    #div-dades-producte *:hover {
+    #estrelles-producte {
+        display: none;
+    }
+    .div-dades-producte-iconos {
+        height: 5%;
+        width: 100%;
+        display: flex;
+        flex-flow: row nowrap;
+    }
+    .icono-color {
+        border-radius: 50%;
+        height: 100%;
+        width: 10%;
+        margin-right: 5px;
+    }
+    .icono-color:hover {
         border: 2px solid black;
     }
 
-    /*  */
-
+/*  */
     #marca-producte { 
         color: grey;
         font-weight: 500;
         margin-top: 8px;
     }
-
     #nom-producte {
         font-size: 15px;
-        margin-top: 8px;
+        margin-top: 5px;
         font-weight: 800;
     }
-
     #preu-producte {
-        margin-top: 8px;
+        font-size: 17px;
+        font-weight: 800;
     }
-
     #color-producte {
-        margin-top: 8px;
+        display: none;
     }
 
-    /* -------------- OPINIO -------------------- */
-
+/* -------------- OPINIO -------------------- */
     #opinio {
         grid-row: 5 / 6;
         display: flex;
@@ -333,11 +327,91 @@
     }
 
     .customer {
-        background-image: url("img/cust.PNG");
+        background-image: url("img/custoer.PNG");
         background-repeat: no-repeat;
         background-size: 100% 100%;
-        height: 75%;
+        height: 65%;
         width: 100%;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 50px;
+        display: none;
+    }
+
+    .fletxa-esquerra {
+        width: 5%;
+        height: 10%;
+        padding-left: 1%;
+        
+    }
+
+    .fletxa-esquerra * {
+        height: 100%;
+        width: 70%;
+    }
+
+    .fletxa-dreta {
+        width: 5%;
+        height: 10%;
+        padding-left: 1.5%;
+    }
+
+    .fletxa-dreta * {
+        height: 100%;
+        width: 70%;
+    }
+
+    /* */
+
+    .div-customer {
+        width: 80%;
+        height: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .div-customer div * {
+        text-align: center;
+    }
+
+    .foto-customer {
+        height: 60%;
+        width: 80%;
+        background-image: url("img/customer-foto.PNG");
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        border-radius: 50%;
+    }
+
+    .estrelles-customer {
+        height: 10%;
+        width: 45%;
+        
+    }
+
+    .estrelles-customer svg {
+        height: 100%;
+        width: 16%;
+    }
+
+    .text-customer {
+        font-weight: 600;
+        height: 20%;
+        width:100%;
+    }
+
+    .reds-customer {
+        opacity: 0.8;
+        color: gray;
+        font-weight: 500;
+        font-size: 17px;
+        height: 10%;
+        width:100%;
+
     }
 
     .nav-pointer {
@@ -361,102 +435,61 @@
         border-radius: 100%;
     }
 
-    /* ------------- FOOTER --------------------- */
+/* ------------- FOOTER --------------------- */
 
     #footer {
         display: flex;
         flex-wrap: wrap;
         background-color: rgb(20, 17, 17, 0.9);
+        padding: 12px;
+        color: white;
     }
-
-    #footer div {
-        padding: 10px;
-        letter-spacing: 2px;
-    }
-
     #footer svg { 
-
         float: right;
         border-radius: 3px;
         margin-top: 4px;
         background-color: rgba(36, 31, 31, 0.9);
-
     }
 
-
-
-    /* DIV FOOTER DADES-ICONO*/
-
+/* DIV FOOTER DADES-ICONO*/
     .footmenu-dades {
-        color: white;
         width: 100%;
         height: 40%;
         padding-top: 80px;
-        overflow: scroll;
     }
-
     .dades {
         font-size: 19px;
         font-weight: 300;
         opacity: 0.7;
     }
 
-
-
-    /* DIVS FOOTER MENU */
-
-    .shopby {
+/* DIVS FOOTER MENU */
+    .customerservice, .information, .shopby {
         width: 100%;
         height: 10%;
-     
-  
+        border-bottom: 2px solid white;
     }
-
-    .information {
-        width: 100%;
-        height: 10%;
-        
-
-    }
-
-    .customerservice {
-        width: 100%;
-        height: 10%;
-        
-      
-    }
-
     .item-footer {
- 
-        color: white;
-        margin: 7px;
         font-size: 22px;
         font-weight: 700;
-        opacity: 0.9;
-        border-bottom: 1px solid white;
-        
+        opacity: 0.9; 
     }
-
-    .item-footer a {
+    .item-footer a, .item-footer br {
         display: none;
     }
 
-    /* DIV FOOTER */
-
-    .newsletter {
+/* DIV FOOTER */
+    .div-newsletter {
         width: 100%;
         height: 30%;
-        color: white;
-        overflow: scroll;
+        padding-top: 40px;
     }
-
     .titol-newsletter {
         margin: 5px;
         font-size: 22px;
         font-weight: 700;
         opacity: 0.9;
     }
-
     .subtitol-footer {
         margin: 5px;
         font-size: 15px;
@@ -464,29 +497,25 @@
         opacity: 0.7;
     }
 
-    #relleno {
-        display: none;
+/* INPUTS FOOTER*/
+    .inputs-footer {
+        padding-top: 20px;
     }
-
-    /* INPUTS FOOTER*/
     #emailinput {
         color: rgb(20, 17, 17, 0.9);;
-        width: 71%;
+        width: 70%;
         height: 55px;
         border-radius: 6px;
-        padding-right: 10px;
+        margin-right: 5px;
     }
-
     #btnfooter {
         color: rgb(20, 17, 17, 0.9);
-        width: 25%;
+        width: 26%;
         height: 55px;
         border-radius: 6px;
         background-color: rgb(209, 191, 24);
-        margin: 10px;
         font-weight: 900;
     }
-
 
 }/* FI MEDIA-MOBILE */
 
@@ -496,7 +525,7 @@
 
     #container {
         display: grid;
-        grid-template-rows: 40px 550px 450px auto auto 300px ;
+        grid-template-rows: 40px 570px 450px auto auto 300px ;
         grid-template-columns: 100%;
     
     }
@@ -515,18 +544,19 @@
         }
     
         #header .header-esquerra  {
-            width: 10%;
+            width: 16%;
             height: 100%;
         }
 
         #header .header-dreta  {
-            width: 20%;
+            width: 16%;
             height: 100%;
         }
 
         #header .header-centre  {
-            width: 70%;
+            width: 68%;
             height: 100%;
+            font-weight: 800;
         }
     
         .header-esquerra *{
@@ -582,13 +612,7 @@
     
 
     /* -------------- DESTACAT 1 DESKTOP-------------------- */
-
-        /* --------------- DESTACAT 1---------------------- */
-
         #destacat1 {
-            background-image: url("img/destacatDek.PNG");
-            background-repeat: no-repeat;
-            background-size: 100% 100%;
             grid-row: 2 / 3;
             display: flex;
             align-items: center;
@@ -597,48 +621,54 @@
             margin-bottom: 40px;
             background-color: rgba(187, 114, 114, 0.9);
         }
-        
-    
-        .newarr {
-            height: auto;
-            width: auto;
-            color: black;
-            padding:10px;
-            margin-bottom: 28px;
-            margin-left: 100px;
-            margin-right: 240px;
-        }
-
-        .find {
+        .div-destacat1 {
             height: 70%;
-            margin-right: 50px;
-            width: 25%;
+            width: 33%;
+            color: black;    
+        }
+        .div-newarr {
+            height: 100%;
+            width: 60%;
+            margin: auto;
+        }
+        .div-destacat2 {
+            height: 70%;
+            width: auto;
             text-align: center;
             font-size: 50px;
             font-weight: 700;
         }
+        .titol-find {
+            width: 40%;
+            margin: auto;
+            color: black;  
+        }
+        .subrallat {
+            text-decoration: underline;
+        }
+        .div-destacat3 {
+            height: 70%;
+            width: 33%;
+        }
     
-        /* Components Sub-Div New Arrivals (newarr)*/
-    
+/* Components Sub-Div New Arrivals (newarr)*/
         #titol-newarr {
             font-size: 30px;
             letter-spacing: 5px;
             font-weight: 800;
         }
-    
         #subtitol-newarr {
             letter-spacing: 5px;
             font-size: 17px;
             font-weight: 800;
         }
-    
         #paragraf-newarr {
             letter-spacing: 1px;
             font-size: 13px;
             font-weight: 400;
         }
-    
-        /* BOTO NEW ARRIVALS */
+
+/* BOTO NEW ARRIVALS */
         #btn-shopnow {
             color: black;
             width: 50%;
@@ -650,47 +680,37 @@
             margin-top: 10px;
         }
 
-
-
-    /* ------------ DESTACAT 2 --------------------- */
-
+/* ------------ DESTACAT 2 --------------------- */
     #destacat2 {
-        background-image: url("img/destaca2D.PNG");
-        background-repeat: no-repeat;
-        background-size: 100% 100%;
         grid-row: 3 / 4;
         display: flex;
         justify-content: flex-end;
         padding: 20px;
         background-color: rgba(132, 175, 196, 0.9)
     }
-
     .standup {
         height: auto;
         width: 25%;
         padding-top: 70px;
     }
 
-    /* Componenets Div-Stand Up */
-
+/* Componenets Div-Stand Up */
     .titol-standup {
         letter-spacing: 2px;
-        font-size: 20px;
+        font-size: 30px;
         font-weight: 900;
     }
-
     .subtitol-standup {
         font-size: 15px;
         letter-spacing: 2px;
         font-weight: 800;
     }
-
     .p-standup {
         font-size: 13px;
         font-weight: 600;
     }
 
-    /* BOTO STANDUP */
+/* BOTO STANDUP */
     #shopnow {
         color: white;
         width: 43%;
@@ -700,8 +720,8 @@
         font-weight: 800;
         border: 2px solid rgb(20, 17, 17, 0.9);
     }
-    /* --------------- TENDA --------------------- */
 
+/* --------------- TENDA --------------------- */
     #tenda {
         grid-row: 4 / 5;
         display: flex;
@@ -713,8 +733,7 @@
         gap: 9px;
     }
 
-    /* Components Titol Tenda */
-
+/* Components Titol Tenda */
     #newpro {
         width: 100%;
         height: 75px;
@@ -722,61 +741,57 @@
         align-items: center;
         flex-wrap: nowrap;
     }
-
     #div-titol-tenda {
         width: 70%;
         text-align: center;
     }
-
     #div-viewall{
         width: 15%;
         text-align: right;
     }
-
     #text-viewall {
         margin-top: 5px;
         text-decoration: underline;
         font-size: 14px;
         font-weight: 600;
     }
-
     .titol-tenda {
         font-weight: 900;
         font-size: 1.5em;
     }
 
-    /* Components Div Producte */
-
+/* Components Div Producte */
     .div-producte {
         width: 24%;
-        height: 500px;
+        height: 700px;
         margin-bottom: 10px;
         display: flex;
-        flex-wrap: wrap;
-        background-color: rgb(250, 237, 218);
-        border-radius: 5px;
-
+        flex-flow: column nowrap;
     }
 
-    /* */
-
+/* */
     #div-foto-producte{
-        height: 65%;
+        height: 70%;
         width: 100%;
         background-color: whitesmoke;
-        position: relative;
         margin-bottom: 15px;
         border-radius: 4px;
+        display: flex;
+        flex-wrap: wrap;
+        align-content: flex-start;
+        padding: 10px;
+    }
+
+    .div-item-producte {
+        height: 7%;
+        width: 100%;
     }
 
     /* */
     #item-producte {
         float: right;
         text-align: center;
-        width: 20%;
-        padding: 8px;
-        margin-top: 20px;
-        margin-right: 20px;
+        width: 12%;
         background-color: maroon;
         color: whitesmoke;
     }
@@ -785,38 +800,60 @@
         display: none;
     }
 
-    #div-dades-producte {
-        height: 8%;
+/* Divs dades producte */
+    .dades-producte {
+        height: 5%;
         width: 100%;
-     
+        padding-top: 4px;
     }
-
-    /*  */
-
+    #div-dades-producte-nom {
+        height: auto;
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-between;
+        align-items: center;
+    }
     #marca-producte { 
         color: grey;
+        font-size: 13px;
         font-weight: 500;
-        margin-top: 8px;
     }
-
     #nom-producte {
         font-size: 15px;
-        margin-top: 8px;
         font-weight: 800;
     }
-
     #preu-producte {
-        margin-top: 8px;
+        font-size: 14px;
+        font-weight: 900; 
     }
-
     #color-producte {
-        margin-top: 8px;
+        padding-top: 5px;
+        text-align: end;
+        height: 100%;
+        width: 20%;
+        color: grey;
+        font-size: 14px;
+        font-weight: 600;
     }
 
-    /* ------------------------------------------------ */
-
-    /* -------------- OPINIO -------------------- */
-
+/* Icones colors productes */
+    .div-dades-producte-iconos {
+        height: 5%;
+        width: 100%;
+        display: flex;
+        flex-flow: row nowrap;
+    }
+    .icono-color {
+        border-radius: 50%;
+        height: 100%;
+        width: 10%;
+        margin-right: 5px;
+    }
+    .icono-color:hover {
+        border: 2px solid black;
+    }
+ 
+/* -------------- OPINIO -------------------- */
     #opinio {
         grid-row: 5 / 6;
         min-height: 700px;
@@ -960,135 +997,107 @@
         border-radius: 100%;
     }
 
-    /* ------------------------------------------------ */
-
-   /* ------------- FOOTER --------------------- */
+/* ------------------ FOOTER --------------------- */
 
    #footer {
     grid-row: 6 / 7;
     display: flex;
     flex-flow: row nowrap;
     background-color: black;
-}
-
-#footer div {
-    padding: 10px;
-}
-
-
-
-
+    }
 
 /* DIV FOOTER DADES-ICONO*/
-
-.footmenu-dades {
-    overflow: scroll;
-    color: white;
-    width: 25%;
-    height: 100%;
-}
-
-.footmenu-dades * {
-    margin-left: 40px;
-}
-
-.dades {
-    font-size: 10px;
-    font-weight: 300;
-    opacity: 0.5;
-}
-
-
+    .footmenu-dades {
+        width: 25%;
+        height: 100%;
+        color: white;
+        overflow: hidden;
+    }
+    .div-icono-footer {
+        height: 30%;
+        width: 40%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 15px;
+    }
+    #icono-footer {
+        height: 38px;
+        margin-top: 65px;
+    }
+    .dades {
+        height: 70%;
+        width: 40%;
+        font-size: 10px;
+        font-weight: 300;
+        opacity: 0.5;
+        margin: auto;
+    }
 
 /* DIVS FOOTER MENU */
-
-.shopby {
-    width: 12%;
-    height: 100%;
-    color: white;
-}
-
-.information {
-    width: 12%;
-    height: 100%;
-    color: white;
-}
-
-.customerservice {
-    width: 11%;
-    height: 100%;
-    color: white;
-}
-
-.item-footer {
-    font-weight: 700;
-    opacity: 0.9;
-    margin-top: 50px;
-    overflow: hidden;
-}
-
-.item-footer a {
-    font-size: 10px;
-    margin-bottom: 5px;
-    text-decoration: none;
-    color: white;
-    opacity: 0.5;
-}
-
-.item-footer svg{
-    display: none;
-}
+    .shopby, .information, .customerservice {
+        width: 12%;
+        height: 100%;
+        color: white;
+        padding: 10px;
+    }
+    .item-footer {
+        font-weight: 700;
+        opacity: 0.9;
+        margin-top: 30px;
+        overflow: hidden;
+    }
+    .item-footer a {
+        font-size: 10px;
+        margin-bottom: 5px;
+        text-decoration: none;
+        color: white;
+        opacity: 0.5;
+    }
+    .item-footer svg{
+        display: none;
+    }
 
 /* DIV FOOTER */
-
-.newsletter {
-    padding: 40px;
-    width: 40%;
-    height: 100%;
-    color: white;
-}
-
-.newsletter * {
-    margin-left: 30px;
-}
-
-
-.titol-newsletter {
-    font-size: 15px;
-    font-weight: 700;
-    opacity: 0.9;
-}
-
-.subtitol-footer {
-    font-size: 10px;
-    font-weight: 700;
-    opacity: 0.5;
-}
+    .div-newsletter {
+        width: 40%;
+        height: 100%;
+        color: white;
+    }
+    .newsletter {
+        padding-top: 60px;
+        width: 80%;
+        margin: auto;
+    }
+    .titol-newsletter {
+        font-size: 15px;
+        font-weight: 700;
+        opacity: 0.9;
+    }
+    .subtitol-footer {
+        font-size: 10px;
+        font-weight: 700;
+        opacity: 0.5;
+    }
 
 /* INPUTS FOOTER*/
-#emailinput {
-    color: rgb(20, 17, 17, 0.9);;
-    width: 40%;
-    height: 50px;
-    border-radius: 6px;
-    padding-right: 10px;
-}
-
-#btnfooter {
-    color: rgb(20, 17, 17, 0.9);
-    width: 15%;
-    height: 50px;
-    font-size: 13px;
-    border-radius: 6px;
-    background-color: rgb(209, 191, 24);
-    margin: 10px;
-    font-weight: 900;
-}
-    
-
-
-    
-
-
-
-}
+    .inputs-footer {
+        padding: 0 !important;
+    }
+    #emailinput {
+        color: rgb(20, 17, 17, 0.9);;
+        width: 50%;
+        height: 50px;
+        border-radius: 6px;
+    }
+    #btnfooter {
+        color: rgb(20, 17, 17, 0.9);
+        width: 25%;
+        height: 50px;
+        font-size: 13px;
+        border-radius: 6px;
+        background-color: rgb(209, 191, 24);
+        margin: 10px;
+        font-weight: 900;
+    }
+        
+}/* FIN MEDIA DESKTOP */
