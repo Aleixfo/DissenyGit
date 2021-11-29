@@ -6,7 +6,7 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 721px) {
 
     /* Container Principal*/
     #container {
@@ -256,6 +256,7 @@
         font-weight: 700;
         font-size: 20px;
         border-radius: 4px;
+        background-color: white;
     }
 
 /* Div dades producte */
@@ -326,19 +327,37 @@
         opacity: 0.8;
     }
 
+    .div-customer {
+        display: none;
+    }
+
     .customer {
-        background-image: url("img/custoer.PNG");
-        background-repeat: no-repeat;
-        background-size: 100% 100%;
         height: 65%;
         width: 100%;
         margin-top: 10px;
         margin-bottom: 10px;
         display: flex;
+        flex-flow: row nowrap;
         align-items: center;
         justify-content: center;
         gap: 50px;
-        display: none;
+
+        
+        
+    }
+
+    .div-customer-mobile {
+        height: 100%;
+        width: 70%;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        display: flex;
+        flex-flow: column nowrap;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+
+      
     }
 
     .fletxa-esquerra {
@@ -366,21 +385,15 @@
 
     /* */
 
-    .div-customer {
-        width: 80%;
-        height: 100%;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-    }
+   
 
     .div-customer div * {
         text-align: center;
     }
 
     .foto-customer {
-        height: 60%;
-        width: 80%;
+        height: 300px;
+        width: 300px;
         background-image: url("img/customer-foto.PNG");
         background-repeat: no-repeat;
         background-size: 100% 100%;
@@ -389,13 +402,11 @@
 
     .estrelles-customer {
         height: 10%;
-        width: 45%;
         
     }
 
     .estrelles-customer svg {
         height: 100%;
-        width: 16%;
     }
 
     .text-customer {
@@ -520,7 +531,7 @@
 }/* FI MEDIA-MOBILE */
 
 /* ******************************************************************************************************************** */
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 722px) {
 
 
     #container {
@@ -924,7 +935,7 @@
 
     /* */
 
-    .div-customer {
+    .div-customer, .div-customer-mobile {
         width: 16%;
         height: 100%;
         display: flex;
@@ -934,13 +945,13 @@
        
     }
 
-    .div-customer div * {
+    .div-customer div *, .div-customer-mobile {
         text-align: center;
     }
 
     .foto-customer {
-        height: 60%;
-        width: 80%;
+        height: 170px;
+        width: 170px;
         background-image: url("img/customer-foto.PNG");
         background-repeat: no-repeat;
         background-size: 100% 100%;
@@ -948,9 +959,7 @@
     }
 
     .estrelles-customer {
-        height: 10%;
-        width: 45%;
-        
+        height: 7%;
     }
 
     .estrelles-customer svg {
@@ -959,6 +968,7 @@
     }
 
     .text-customer {
+        overflow: hidden;
         font-weight: 600;
         height: 20%;
         width:100%;
@@ -980,11 +990,13 @@
         width: 100%;
         height: 10%;
         text-align: center;
+        padding-top: 20px;
+    
     }
 
     #nav {
-        margin-bottom: 25px;
-
+      
+       
     }
 
     #nav svg {
