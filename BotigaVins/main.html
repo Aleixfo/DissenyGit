@@ -1,0 +1,851 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://kit.fontawesome.com/3a64c417f1.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="icon" type="image/png" href="img/ic.PNG" />
+    <title>Botiga</title>
+
+
+
+
+
+</head>
+
+<body>
+
+
+    <!-- DIV QUE HA DAPAREIXER EN CLICAR EL MENU DE EL MOBILE -->
+    <div id="container-menu-mobile">
+
+        <div class="item-menu-mobile">Shop <span id="span-tancar"><input type="button" value="X" id="btn-tancar"></span></div>
+        <div class="item-menu-mobile">Company</div>
+        <div class="item-menu-mobile">Blog</div>
+        <div class="item-menu-mobile">Support</div>
+        <div class="item-menu-mobile">Surfboard</div>
+        <div class="item-menu-mobile">Contact</div>
+        <div id="options-mobile">
+            <div class="subopcions-menu-mobile">My Wish List</div>
+            <div class="subopcions-menu-mobile">Sign In</div>
+            <div class="subopcions-menu-mobile">Create an account</div>
+        </div>
+
+    </div>
+
+
+    <!-- Pàgina principal -->
+    <div id="contenidor">
+
+
+
+
+        <!-- SECCIO HEADER -->
+        <div id="header">
+
+            <div id="div-header-esquerra">
+
+
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-list" id="menu" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd"
+                        d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z" />
+                </svg>
+                <img src="img/icono1.PNG" alt="Girl in a jacket">
+            </div>
+
+            <div id="div-header-centre">
+
+                <a href="main.html">Shop</a>
+                <a href="url">Company</a>
+                <a href="url">Blog</a>
+                <a href="url">Support</a>
+                <a href="producte.html">Surfboard</a>
+                <a href="url">Contact</a>
+
+            </div>
+
+            <div id="div-header-dreta">
+
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart3" viewBox="0 0 16 16">
+                    <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .49.598l-1 5a.5.5 0 0 1-.465.401l-9.397.472L4.415 11H13a.5.5 0 0 1 0 1H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l.84 4.479 9.144-.459L13.89 4H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z" />
+                </svg>
+
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person" viewBox="0 0 16 16">
+                    <path d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0zm4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4zm-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10z" />
+                </svg>
+
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                    <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
+                </svg>
+
+            </div>
+
+        </div>
+
+        <!-- SECCIO DESTACAT1 -->
+        <div id="destacat1">
+
+            <div id="div-destacat1-esquerra">
+                <div class="div-newarr">
+                    <p id="titol-newarr">New Arrivals</p>
+
+                    <p id="subtitol-newarr">From $399</p>
+
+                    <p id="paragraf-newarr">Quisquemos sodales suscipit tortor condimentum<br>
+                        <br>de cosmos lacus maleifend menean blanditos
+                    </p>
+                    <input type="button" class="btn-shopnow" value="SHOP NOW">
+                </div>
+            </div>
+
+            <div id="div-destacat1-centre">
+                <p class="titol-find">FIND YOUR PERFECT <span class="subrallat">SURFBOARD</span></p>
+            </div>
+
+            <div id="div-destacat1-dreta"></div>
+
+        </div>
+
+        <!-- SECCIO DESTACAT2 -->
+        <div id="destacat2">
+
+            <div class="standup">
+
+                <p class="titol-standup">Stand Up</p>
+                <p class="titol-standup">Paddle Board</p>
+                <p class="subtitol-standup">From $4.99</p>
+                <p class="p-standup">Quisquemos sodales suscipit tortor condimentum de<br>cosmo lacus maleifend menean blanditos.
+                </p>
+                <br>
+                <input type="button" id="shopnow" value="SHOP NOW">
+
+            </div>
+
+        </div>
+
+        <!-- SECCIO TENDA -->
+        <div id="tenda">
+
+            <div id="newpro">
+
+                <div id="div-viewall"></div>
+
+                <div id="div-titol-tenda">
+                    <p class="titol-tenda">New Products</p>
+                </div>
+
+                <div id="div-viewall">
+                    <p id="text-viewall">View All</p>
+                </div>
+
+            </div>
+
+            <!-- PRODUCTES LLISTATS -->
+            <div class="div-producte">
+
+                <div class="div-foto-producte">
+
+                    <div class="div-item-producte">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-heart" viewBox="0 0 16 16">
+                            <path d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z"/>
+                        </svg>
+                        <span class="item-producte-new">New</span></div>
+                    <div class="div-item-producte">
+
+                    </div>
+                    <div class="div-item-producte"></div>
+                    <div class="div-item-producte"></div>
+
+                    <div class="div-boto-producte">
+                        <input type="button" class="boton-añadir-carrito" value="ADD TO CART">
+                    </div>
+
+                </div>
+
+                <div class="dades-producte div-dades-producte-marca">
+                    <p class="marca-producte">ELLA - HALOTHEMES</p>
+                </div>
+
+                <div class="dades-producte div-dades-producte-nom">
+                    <p class="nom-producte"><a href="producte.html">Clasi Masfern</a></p>
+                    <p class="color-producte">Black</p>
+                </div>
+
+                <div class="dades-producte estrelles-producte">
+
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                    <i class="far fa-star"></i>
+                    <i class="far fa-star"></i>
+
+                </div>
+                <div class="dades-producte div-dades-producte-preu">
+                    <p class="preu-producte">$59.00</p>
+                </div>
+                <div class="dades-producte div-dades-producte-iconos">
+                    <span class="icono-color" style="background-color: black;">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                    <span class="icono-color" style="background-color: rgb(185, 201, 185);">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                    <span class="icono-color" style="background-color: rgb(79, 214, 124);">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                    <span class="icono-color" style="background-color: rgb(241, 166, 80);">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                </div>
+
+            </div>
+
+            <!-- PRODUCTES LLISTATS -->
+            <div class="div-producte">
+
+                <div class="div-foto-producte">
+
+                    <div class="div-item-producte">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-heart" viewBox="0 0 16 16">
+                            <path d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z"/>
+                        </svg>
+                        <span class="item-producte-sale">Sale</span></div>
+                    <div class="div-item-producte">
+                        <p class="item-producte-bundle">Bundle</p>
+                    </div>
+                    <div class="div-item-producte"></div>
+                    <div class="div-item-producte"></div>
+
+                    <div class="div-boto-producte">
+                        <input type="button" class="boton-añadir-carrito" value="ADD TO CART">
+                    </div>
+
+                </div>
+
+                <div class="dades-producte div-dades-producte-marca">
+                    <p class="marca-producte">ELLA - HALOTHEMES</p>
+                </div>
+
+                <div class="dades-producte div-dades-producte-nom">
+                    <p class="nom-producte">Cosmopoolis Namino Odi</p>
+                    <p class="color-producte">Black</p>
+                </div>
+
+                <div class="dades-producte estrelles-producte">
+
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                    <i class="far fa-star"></i>
+                    <i class="far fa-star"></i>
+
+                </div>
+                <div class="dades-producte div-dades-producte-preu">
+                    <p class="preu-producte"><span class="lletra-tatxada">$429.99</span>&nbsp;&nbsp;<span class="lletra-vermella">$399.99</span></p>
+                </div>
+                <div class="dades-producte div-dades-producte-iconos">
+                    <span class="icono-color" style="background-color: rgb(236, 137, 22);">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                    <span class="icono-color" style="background-color: rgb(76, 177, 76);">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                    <span class="icono-color" style="background-color: rgb(79, 87, 206);">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                </div>
+
+            </div>
+
+            <!-- PRODUCTES LLISTATS -->
+            <div class="div-producte">
+
+                <div class="div-foto-producte">
+
+                    <div class="div-item-producte">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-heart" viewBox="0 0 16 16">
+                            <path d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z"/>
+                        </svg>
+                        <span class="item-producte-sale">Sale</span></div>
+                    <div class="div-item-producte">
+
+                    </div>
+                    <div class="div-item-producte"></div>
+                    <div class="div-item-producte"></div>
+
+                    <div class="div-boto-producte">
+                        <input type="button" class="boton-añadir-carrito" value="ADD TO CART">
+                    </div>
+
+                </div>
+
+                <div class="dades-producte div-dades-producte-marca">
+                    <p class="marca-producte">SODLING</p>
+                </div>
+
+                <div class="dades-producte div-dades-producte-nom">
+                    <p class="nom-producte">Cosmopoolis Namino Odi</p>
+                    <p class="color-producte">Black</p>
+                </div>
+
+                <div class="dades-producte estrelles-producte">
+
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                    <i class="far fa-star"></i>
+                    <i class="far fa-star"></i>
+
+                </div>
+                <div class="dades-producte div-dades-producte-preu">
+                    <p class="preu-producte"><span class="lletra-tatxada">$429.99</span>&nbsp;&nbsp;<span class="lletra-vermella">$399.99</span></p>
+                </div>
+                <div class="dades-producte div-dades-producte-iconos">
+                    <span class="icono-color" style="background-color: rgb(39, 44, 58);">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                    <span class="icono-color" style="background-color: rgb(230, 109, 183);">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                    <span class="icono-color" style="background-color: rgb(179, 82, 82);">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                </div>
+
+            </div>
+
+            <!-- PRODUCTES LLISTATS -->
+            <div class="div-producte">
+
+                <div class="div-foto-producte">
+
+                    <div class="div-item-producte">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-heart" viewBox="0 0 16 16">
+                            <path d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z"/>
+                        </svg>
+                        <span class="item-producte-new">New</span></div>
+                    <div class="div-item-producte">
+                        <p class="item-producte-sale">Sale</p>
+                    </div>
+                    <div class="div-item-producte"></div>
+                    <div class="div-item-producte"></div>
+
+                    <div class="div-boto-producte">
+                        <input type="button" class="boton-añadir-carrito" value="ADD TO CART">
+                    </div>
+
+                </div>
+
+                <div class="dades-producte div-dades-producte-marca">
+                    <p class="marca-producte">ELLA - HALOTHEMES</p>
+                </div>
+
+                <div class="dades-producte div-dades-producte-nom">
+                    <p class="nom-producte">Clasi Masfern</p>
+                    <p class="color-producte">DarkOrange</p>
+                </div>
+
+                <div class="dades-producte estrelles-producte">
+
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                    <i class="far fa-star"></i>
+                    <i class="far fa-star"></i>
+
+                </div>
+                <div class="dades-producte div-dades-producte-preu">
+                    <p class="preu-producte"><span class="lletra-tatxada">$429.99</span>&nbsp;&nbsp;<span class="lletra-vermella">$399.99</span></p>
+                </div>
+                <div class="dades-producte div-dades-producte-iconos">
+                    <span class="icono-color" style="background-color: rgb(142, 144, 150);">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                    <span class="icono-color" style="background-color: rgb(50, 56, 50);">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                    <span class="icono-color" style="background-color: rgb(59, 230, 101);">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                </div>
+
+            </div>
+
+            <!-- PRODUCTES LLISTATS -->
+            <div class="div-producte">
+
+                <div class="div-foto-producte">
+
+                    <div class="div-item-producte">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-heart" viewBox="0 0 16 16">
+                            <path d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z"/>
+                        </svg>
+                        <span class="item-producte-sale">Sale</span></div>
+                    <div class="div-item-producte">
+
+                    </div>
+                    <div class="div-item-producte"></div>
+                    <div class="div-item-producte"></div>
+
+                    <div class="div-boto-producte">
+                        <input type="button" class="boton-añadir-carrito" value="ADD TO CART">
+                    </div>
+
+                </div>
+
+                <div class="dades-producte div-dades-producte-marca">
+                    <p class="marca-producte">SODLING</p>
+                </div>
+
+                <div class="dades-producte div-dades-producte-nom">
+                    <p class="nom-producte">Cosmopoolis Namino Odi</p>
+                    <p class="color-producte">Red</p>
+                </div>
+
+                <div class="dades-producte estrelles-producte">
+
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                    <i class="far fa-star"></i>
+                    <i class="far fa-star"></i>
+
+                </div>
+                <div class="dades-producte div-dades-producte-preu">
+                    <p class="preu-producte"><span class="lletra-tatxada">$429.99</span>&nbsp;&nbsp;<span class="lletra-vermella">$399.99</span></p>
+                </div>
+                <div class="dades-producte div-dades-producte-iconos">
+                    <span class="icono-color" style="background-color: rgb(178, 223, 74);">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                    <span class="icono-color" style="background-color: green;">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                    <span class="icono-color" style="background-color: rgb(78, 21, 21);">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                    <span class="icono-color" style="background-color: rgb(70, 57, 107);">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                </div>
+
+            </div>
+
+            <!-- PRODUCTES LLISTATS -->
+            <div class="div-producte">
+
+                <div class="div-foto-producte">
+
+                    <div class="div-item-producte">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-heart" viewBox="0 0 16 16">
+                            <path d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z"/>
+                        </svg>
+                        <span class="item-producte-new">New</span></div>
+                    <div class="div-item-producte">
+
+                    </div>
+                    <div class="div-item-producte"></div>
+                    <div class="div-item-producte"></div>
+
+                    <div class="div-boto-producte">
+                        <input type="button" class="boton-añadir-carrito" value="ADD TO CART">
+                    </div>
+
+                </div>
+
+                <div class="dades-producte div-dades-producte-marca">
+                    <p class="marca-producte">SODLING</p>
+                </div>
+
+                <div class="dades-producte div-dades-producte-nom">
+                    <p class="nom-producte">Clasi Masfern</p>
+                    <p class="color-producte">Blue</p>
+                </div>
+
+                <div class="dades-producte estrelles-producte">
+
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                    <i class="far fa-star"></i>
+                    <i class="far fa-star"></i>
+
+                </div>
+                <div class="dades-producte div-dades-producte-preu">
+                    <p class="preu-producte">$59.00</p>
+                </div>
+                <div class="dades-producte div-dades-producte-iconos">
+                    <span class="icono-color" style="background-color: royalblue;">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                    <span class="icono-color" style="background-color: green;">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                    <span class="icono-color" style="background-color: red;">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                    <span class="icono-color" style="background-color: red;">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                </div>
+
+            </div>
+
+            <!-- PRODUCTES LLISTATS -->
+            <div class="div-producte">
+
+                <div class="div-foto-producte">
+
+                    <div class="div-item-producte">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-heart" viewBox="0 0 16 16">
+                            <path d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z"/>
+                        </svg>
+                        <span class="item-producte-bundle">Bundle</span></div>
+                    <div class="div-item-producte">
+                        <p class="item-producte-sale">Sale</p>
+                    </div>
+                    <div class="div-item-producte"></div>
+                    <div class="div-item-producte"></div>
+
+                    <div class="div-boto-producte">
+                        <input type="button" class="boton-añadir-carrito" value="ADD TO CART">
+                    </div>
+
+                </div>
+
+                <div class="dades-producte div-dades-producte-marca">
+                    <p class="marca-producte">ELLA - HALOTHEMES</p>
+                </div>
+
+                <div class="dades-producte div-dades-producte-nom">
+                    <p class="nom-producte">Cosmopoolis Namino Odi</p>
+                    <p class="color-producte">Black</p>
+                </div>
+
+                <div class="dades-producte estrelles-producte">
+
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                    <i class="far fa-star"></i>
+                    <i class="far fa-star"></i>
+
+                </div>
+                <div class="dades-producte div-dades-producte-preu">
+                    <p class="preu-producte">$59.00</p>
+                </div>
+                <div class="dades-producte div-dades-producte-iconos">
+                    <span class="icono-color" style="background-color: royalblue;">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                    <span class="icono-color" style="background-color: green;">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                    <span class="icono-color" style="background-color: red;">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                    <span class="icono-color" style="background-color: red;">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                </div>
+
+            </div>
+
+            <!-- PRODUCTES LLISTATS -->
+            <div class="div-producte">
+
+                <div class="div-foto-producte">
+
+                    <div class="div-item-producte">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-heart" viewBox="0 0 16 16">
+                            <path d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z"/>
+                        </svg>
+                        <span class="item-producte-sale">Sale</span></div>
+                    <div class="div-item-producte">
+
+                    </div>
+                    <div class="div-item-producte"></div>
+                    <div class="div-item-producte"></div>
+
+                    <div class="div-boto-producte">
+                        <input type="button" class="boton-añadir-carrito" value="ADD TO CART">
+                    </div>
+
+                </div>
+
+                <div class="dades-producte div-dades-producte-marca">
+                    <p class="marca-producte">ELLA - HALOTHEMES</p>
+                </div>
+
+                <div class="dades-producte div-dades-producte-nom">
+                    <p class="nom-producte">Cosmopoolis Namino Odi</p>
+                    <p class="color-producte">Black</p>
+                </div>
+
+                <div class="dades-producte estrelles-producte">
+
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                    <i class="far fa-star"></i>
+                    <i class="far fa-star"></i>
+
+                </div>
+                <div class="dades-producte div-dades-producte-preu">
+                    <p class="preu-producte"><span class="lletra-tatxada">$429.99</span>&nbsp;&nbsp;<span class="lletra-vermella">$399.99</span></p>
+                </div>
+                <div class="dades-producte div-dades-producte-iconos">
+                    <span class="icono-color" style="background-color: royalblue;">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                    <span class="icono-color" style="background-color: green;">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                    <span class="icono-color" style="background-color: red;">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- SECCIO OPINIO -->
+        <div id="opinio">
+
+            <div class="titol-opinio">
+
+                <br>
+                <h3 class="titol-introduccio">What Our Customers Say...</h3>
+                <br>
+                <p class="subtitol-introduccio">See what other people, prototype testers and supporters told about us.
+                </p>
+
+            </div>
+
+            <div class="customer">
+
+                <div class="fletxa-esquerra">
+
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-left-square" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M15 2a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V2zM0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2zm11.5 5.5a.5.5 0 0 1 0 1H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5H11.5z"/>
+                    </svg>
+
+                </div>
+                <div class="div-customer-mobile">
+
+                    <div class="foto-customer"></div>
+                    <div class="estrelles-customer">
+
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+
+
+                    </div>
+                    <div class="text-customer">
+
+                        <p class="comentari-customer">Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias, nihil aut dolorum assumenda natus obcaecati soluta?</p>
+
+                    </div>
+                    <div class="reds-customer">
+
+
+                        <p class="info-customer">- Annie, @annie_le, United Kingdom</p>
+
+                    </div>
+                </div>
+                <div class="div-customer">
+
+                    <div class="foto-customer"></div>
+                    <div class="estrelles-customer">
+
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+
+
+                    </div>
+                    <div class="text-customer">
+
+                        <p class="comentari-customer">Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias, nihil aut dolorum assumenda natus obcaecati soluta?</p>
+
+                    </div>
+                    <div class="reds-customer">
+
+
+                        <p class="info-customer">- Annie, @annie_le, United Kingdom</p>
+
+                    </div>
+                </div>
+                <div class="div-customer">
+
+                    <div class="foto-customer"></div>
+                    <div class="estrelles-customer">
+
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+
+
+                    </div>
+                    <div class="text-customer">
+
+                        <p class="comentari-customer">Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias, nihil aut dolorum assumenda natus obcaecati soluta?</p>
+
+                    </div>
+                    <div class="reds-customer">
+
+
+                        <p class="info-customer">- Annie, @annie_le, United Kingdom</p>
+
+                    </div>
+                </div>
+                <div class="div-customer">
+
+                    <div class="foto-customer"></div>
+                    <div class="estrelles-customer">
+
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                        <i class="far fa-star"></i>
+                        <i class="far fa-star"></i>
+
+                    </div>
+                    <div class="text-customer">
+
+                        <p class="comentari-customer">Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias, nihil aut dolorum assumenda natus obcaecati soluta?</p>
+
+                    </div>
+                    <div class="reds-customer">
+
+
+                        <p class="info-customer">- Annie, @annie_le, United Kingdom</p>
+
+                    </div>
+                </div>
+                <div class="fletxa-dreta">
+
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right-square" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M15 2a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V2zM0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2zm4.5 5.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H4.5z"/>
+                    </svg>
+
+                </div>
+
+            </div>
+
+            <div class="nav-pointer">
+
+                <p id="nav">
+
+                    <!-- <input type="radio"><input type="radio"><input type="radio"><input type="radio"> -->
+
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-circle" viewBox="0 0 16 16">
+                        <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
+                    </svg>
+
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-circle" viewBox="0 0 16 16">
+                        <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
+                    </svg>
+
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-circle" viewBox="0 0 16 16">
+                        <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
+                    </svg>
+
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-circle" viewBox="0 0 16 16">
+                        <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
+                    </svg>
+
+                </p>
+
+            </div>
+
+        </div>
+
+        <!-- SECCIO FOOTER -->
+        <div id="footer">
+
+            <div class="footmenu-dades">
+
+                <div class="div-icono-footer">
+                    <img src="img/icono.PNG" id="icono-footer" alt="Girl in a jacket">
+                </div>
+
+                <p class="dades">
+                    <br> 685 Market Street<br> San Francisco, CA 94105,<br> United States<br>
+                    <br> Call us: 1.8000.000.6690<br> Email: support@halothemes.com
+
+                </p>
+
+            </div>
+
+            <div class="shopby">
+
+                <br>
+                <p class="item-footer">
+
+                    Shop by<br>
+
+                    <a href="...">FaceBook</a><br>
+                    <a href="...">Instagram</a><br>
+                    <a href="...">Twitter</a><br>
+                    <a href="...">Youtube</a><br>
+                    <a href="...">Twitch</a><br>
+
+
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-square" viewBox="0 0 16 16">
+                        <path d="M14 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h12zM2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2z" />
+                    </svg>
+
+                </p>
+
+            </div>
+
+            <div class="information">
+
+                <br>
+                <p class="item-footer">
+
+                    Information<br>
+
+                    <a href="...">Aplications</a><br>
+                    <a href="...">Creedencials</a><br>
+                    <a href="...">Visual Studio & Sound</a><br>
+                    <a href="...">Mobiles Phones & Tablets</a><br>
+                    <a href="...">Wholly Docky</a><br>
+                    <a href="...">Greetings</a><br>
+
+
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-square" viewBox="0 0 16 16">
+                        <path d="M14 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h12zM2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2z" />
+                    </svg>
+
+                </p>
+
+            </div>
+
+            <div class="customerservice">
+
+                <br>
+                <p class="item-footer">
+
+                    Customer Service<br>
+
+                    <a href="...">Comunity</a><br>
+                    <a href="...">Forum</a><br>
+                    <a href="...">FAQ</a><br>
+                    <a href="...">Political Privacy</a><br>
+                    <a href="...">Contact</a><br>
+
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-square" viewBox="0 0 16 16">
+                        <path d="M14 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h12zM2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2z" />
+                    </svg>
+
+                </p>
+
+            </div>
+
+            <div class="div-newsletter">
+
+                <div class="newsletter">
+
+                    <p class="titol-newsletter">Newsletter Sign Up</p>
+                    <p class="subtitol-footer">Receive our latest updates about our products and promotions.</p>
+
+                    <div class="inputs-footer">
+
+                        <input type="text" id="emailinput" placeholder="enter your email address">
+                        <input type="button" id="btnfooter" value="SUBMIT">
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+
+
+
+
+
+        </div>
+
+
+    </div>
+    <!-- CONTAINER -->
+
+    <script>
+        $(document).ready(function() {
+
+            $("#btn-tancar").click(function() {
+                $("#container-menu-mobile").hide();
+            });
+
+            $("#menu").click(function() {
+                $("#container-menu-mobile").show();
+            });
+
+        });
+    </script>
+
+</body>
+
+</html>
