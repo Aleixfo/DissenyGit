@@ -10,6 +10,10 @@ var gulp = require('gulp'),
     { series, parallel } = require('gulp');
 
 
+
+
+
+
 /* PRACTICA KITTENS */
 //1- Tasca "sass". Compilar els arxius .scss de la carpeta "sass" i ficar-los dins una carpeta anomenada "css"
 function buildStyles() {
