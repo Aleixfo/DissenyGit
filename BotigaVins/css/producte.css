@@ -121,7 +121,7 @@
     height: 94%;
     margin: auto;
     margin-top: auto;
-    background-image: url("img/foto-producte.PNG");
+    background-image: url("../img/foto-producte.PNG");
     background-repeat: no-repeat;
     background-size: 100% 100%;
 }
@@ -163,7 +163,7 @@
 .div-imatge-carrousel {
     width: 18%;
     height: 100%;
-    background-image: url("img/foto-producte.PNG");
+    background-image: url("../img/foto-producte.PNG");
     background-repeat: no-repeat;
     background-size: 100% 100%;
 }

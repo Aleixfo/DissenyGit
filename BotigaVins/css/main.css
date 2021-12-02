@@ -123,7 +123,7 @@ a {
     }
     /* --------------- DESTACAT 1---------------------- */
     #destacat1 {
-        background-image: url("img/vinito.webp");
+        background-image: url("../img/vinito.webp");
         background-repeat: no-repeat;
         background-size: 100% 100%;
         grid-row: 2 / 3;
@@ -173,7 +173,7 @@ a {
     }
     /* ------------ DESTACAT 2 --------------------- */
     #destacat2 {
-        background-image: url("img/vinoteca.jpg");
+        background-image: url("../img/vinoteca.jpg");
         background-repeat: no-repeat;
         background-size: 100% 100%;
         grid-row: 3 / 4;
@@ -263,7 +263,7 @@ a {
     }
     /*  Div foto producte*/
     .div-foto-producte {
-        background-image: url("img/botella1.jpg");
+        background-image: url("../img/botella1.jpg");
         background-repeat: no-repeat;
         background-size: 100% 100%;
         height: 64%;
@@ -438,7 +438,7 @@ a {
     .foto-customer {
         height: 300px;
         width: 300px;
-        background-image: url("img/customer-foto.PNG");
+        background-image: url("../img/customer-foto.PNG");
         background-repeat: no-repeat;
         background-size: 100% 100%;
         border-radius: 50%;
@@ -652,7 +652,7 @@ a {
         justify-content: flex-start;
         align-content: center;
         margin-bottom: 40px;
-        background-image: url("img/capsa1.jfif");
+        background-image: url("../img/capsa1.jfif");
         background-repeat: no-repeat;
         background-size: 50% 100%;
         background-position: right;
@@ -718,7 +718,7 @@ a {
         display: flex;
         justify-content: flex-end;
         padding: 20px;
-        background-image: url("img/campo.png");
+        background-image: url("../img/campo.png");
         background-repeat: no-repeat;
         background-size: 100% 100%;
     }
@@ -802,7 +802,7 @@ a {
     .div-foto-producte {
         height: 70%;
         width: 100%;
-        background-image: url("img/botella1.jpg");
+        background-image: url("../img/botella1.jpg");
         background-repeat: no-repeat;
         background-size: 100% 100%;
         margin-bottom: 15px;
@@ -928,7 +928,7 @@ a {
     }
     /* */
     .customer {
-        background-image: url("img/custoer.PNG");
+        background-image: url("../img/custoer.PNG");
         background-repeat: no-repeat;
         background-size: 100% 100%;
         height: 65%;
@@ -974,7 +974,7 @@ a {
     .foto-customer {
         height: 170px;
         width: 170px;
-        background-image: url("img/customer-foto.PNG");
+        background-image: url("../img/customer-foto.PNG");
         background-repeat: no-repeat;
         background-size: 100% 100%;
         border-radius: 50%;
